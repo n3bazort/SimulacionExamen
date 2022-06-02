@@ -20,10 +20,10 @@ namespace SimulacionExamen
             int sueldo = (precioxHora * cantHorasTrabajadas) + sueldoBase;
             int aux = 0; 
             if (sueldo > 1000)
-            { Console.WriteLine("El sueldo supera los $1000 USD: " );
+            { Console.WriteLine("El sueldo supera los $1000 USD: "+sueldo );
                  aux=sueldo; }
             else if (sueldo < 1000)
-            { Console.WriteLine("El sueldo NO supera los $1000 USD: " );
+            { Console.WriteLine("El sueldo NO supera los $1000 USD: "+sueldo );
                  aux=sueldo;
             }
             return aux;

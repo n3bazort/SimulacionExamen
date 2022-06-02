@@ -22,7 +22,7 @@ namespace SimulacionExamen
 
         public void Imprimir()
         {
-            Console.WriteLine("Simulación de impresión");
+            Console.WriteLine("\n");
             Console.WriteLine(" Nombres: " + nombres +
                             "\n Apellidos: " + apellidos + 
                             "\n Dirección: " + direccion + 

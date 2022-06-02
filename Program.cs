@@ -9,23 +9,30 @@ namespace SimulacionExamen
     {
         static void Main(string[] args)
         {
-            ProfexHoras Profesor1 = new ProfexHoras("Juan", "Flores", "Manta", "131551434");
-            Profesor1.Imprimir();
-            int H = Profesor1.CalcularSueldo(2, 40, 0);
-            Console.WriteLine("Su sueldo es de: $" + H);
-            Console.ReadKey();
+            var LaLista = new List<Profesor>(); // La caja contenedora
+            
 
-            ProfexContrato ProfeContrato1 = new ProfexContrato("Elías", "Cantos", "Montecirti", "131465431");
-            ProfeContrato1.Imprimir();
-            int C = ProfeContrato1.CalcularSueldo(400,2,40);
-            Console.WriteLine("Su sueldo es de: $" + C);
-            Console.ReadKey();
+            ProfexHoras ProfeHora1 = new ProfexHoras
+                ("Juan", "Flores", "Manta", "131551434");          
 
-            ProfexNombra ProfeNombra1 = new ProfexNombra("Ulices", "Rivadeneira", "Guayaquil", "13158901941");
-            ProfeNombra1.Imprimir();
-            int N= ProfeNombra1.CalcularSueldo(400, 2, 160);
-            Console.WriteLine("Su sueldo es de: $" + N);
-            Console.Clear();
+            ProfexContrato ProfeContrato1 = new ProfexContrato
+                ("Elías", "Cantos", "Montecirti", "131465431");
+
+            ProfexNombra ProfeNombra1 = new ProfexNombra
+                ("Ulices", "Rivadeneira", "Guayaquil", "13158901941");
+
+            LaLista.Add(ProfeHora1);
+            LaLista.Add(ProfeContrato1);
+            LaLista.Add(ProfeNombra1);
+
+            foreach (var a in LaLista)
+            {   
+                int r =a.CalcularSueldo(400, 2, 160);
+                a.Imprimir();
+                Console.WriteLine("Su sueldo es de Bellezaaaaaaaaaaaaaaa: $" + r);
+                Console.ReadKey();
+                Console.Clear();  
+            }
             Console.ReadKey();
         }
  
