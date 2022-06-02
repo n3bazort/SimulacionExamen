@@ -43,9 +43,9 @@
     <Compile Include="Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PxContrato.cs" />
-    <Compile Include="PxHora.cs" />
-    <Compile Include="PxNombra.cs" />
+    <Compile Include="ProfexContrato.cs" />
+    <Compile Include="ProfexHoras.cs" />
+    <Compile Include="ProfexNombra.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

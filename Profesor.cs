@@ -5,14 +5,14 @@ using System.Text;
 
 namespace SimulacionExamen
 {
-    class Profesor
+     class Profesor
     {
         String nombres;
         String apellidos;
         String direccion;
         String cedula;
 
-        public Profesor(String nombres, String apellidos, String direccion,String cedula)
+        public  Profesor(String nombres, String apellidos, String direccion,String cedula)
         {
             this.Nombres = nombres;
             this.Apellidos = apellidos;
@@ -26,16 +26,14 @@ namespace SimulacionExamen
             Console.WriteLine(" Nombres: " + nombres +
                             "\n Apellidos: " + apellidos + 
                             "\n Dirección: " + direccion + 
-                            "\n Cédula : " + cedula);
-            
+                            "\n Cédula : " + cedula);   
         }
 
-        public virtu void  CalcularSueldo(){
-
-            Console.WriteLine("Calculo hecho en clase padre profesor");
-            Console.ReadKey();
+        public virtual int CalcularSueldo(int hola, int chao, int quetal) {
+            int vacio = 0; 
+            Console.WriteLine("Esto no debería imprimirse nunca");
+            return vacio;
         }
-
 
         public string Nombres { get => nombres; set => nombres = value; }
         public string Apellidos { get => apellidos; set => apellidos = value; }
